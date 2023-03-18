@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Exam2</title>
+  </head>
+  <body>
+    <!-- ===============Loading Page=================== -->
+    <div id="loading">
+      <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ===============Side Nav=================== -->
+    <div class="sidenav d-flex">
+      <div
+        class="menu h-100 py-4 px-3 d-flex flex-column justify-content-between"
+      >
+        <ul class="list-unstyled">
+          <li onclick="search(); closeNav()" class="mb-3">Search</li>
+          <li onclick="getCategories(); closeNav()" class="mb-3">Categories</li>
+          <li onclick="getareas(); closeNav()" class="mb-3">Areas</li>
+          <li onclick="getIngredients(); closeNav()" class="mb-3">
+            Ingredients
+          </li>
+          <li onclick="displayContact(); closeNav()" class="mb-3">
+            Contact Us
+          </li>
+        </ul>
+        <div>
+          <span class="me-1"><i class="fa-brands fa-facebook"></i></span>
+          <span class="me-1"><i class="fa-brands fa-twitter"></i></span>
+          <span class="me-1"><i class="fa-brands fa-dribbble"></i></span>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="icons h-100 py-4 px-2 d-flex flex-column justify-content-between align-items-center bg-light"
+      >
+        <div class="image">
+          <img class="w-100" src="img/logo.png" alt="logo" />
+        </div>
+        <div class="openBtn text-black fs-2">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark d-none"></i>
+        </div>
+        <div class="text-black d-flex flex-column">
+          <i class="fa-brands fa-dribbble mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ===============Main content=================== -->
+    <section>
+      <div class="container" id="mainContainer">
+        <div class="row gy-4 py-5" id="mainRow">
+          <!-- <div class="col-md-3">
+            <div class="mealBox position-relative overflow-hidden rounded-2">
+              <img class="w-100" src="img/beef.png" alt="logo" />
+              <div class="layer">
+                <h3>Chiken</h3>
+                <p class="fs-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Mollitia cupiditate dicta distinctio tempore minima cum?
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="row gy-4" id="secondRow"></div>
+      </div>
+    </section>
+  </body>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</html>
